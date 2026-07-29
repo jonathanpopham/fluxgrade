@@ -1,0 +1,15 @@
+{
+  "name": "fluxgrade",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A competitive, AI-native software engineering mission prototype.",
+  "scripts": {
+    "serve": "node scripts/server.mjs",
+    "test": "node --test",
+    "test:e2e": "node tests/e2e.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.54.1"
+  }
+}

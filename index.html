@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Fluxgrade is a competitive arena for AI-native software engineering. Direct an agent, survive a live requirement change, and earn your rank."
+    />
+    <meta name="theme-color" content="#0b0d0c" />
+    <meta property="og:title" content="Fluxgrade — Software fights back" />
+    <meta
+      property="og:description"
+      content="Play an eight-minute AI-native engineering mission. Adapt under pressure. Earn your rank."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jonathanpopham.com/fluxgrade/" />
+    <title>Fluxgrade — Software fights back</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./src/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to mission</a>
+
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Fluxgrade home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="brand-f">F</span>
+          <span class="brand-bolt"></span>
+        </span>
+        <span class="brand-word">Fluxgrade</span>
+      </a>
+
+      <div class="header-meta">
+        <span class="status-pip" aria-hidden="true"></span>
+        <span>Season zero</span>
+        <span class="header-divider"></span>
+        <span>Standard league</span>
+      </div>
+
+      <button class="sound-toggle icon-button" type="button" aria-pressed="false">
+        <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="sr-only">Toggle interface sounds</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="screen landing-screen is-active" data-screen="landing">
+        <div class="landing-grid">
+          <div class="hero-copy">
+            <div class="season-label">
+              <span>Mission 001</span>
+              <span class="season-line"></span>
+              <span>Public alpha</span>
+            </div>
+
+            <h1>Software<br /><em>fights back.</em></h1>
+
+            <p class="hero-dek">
+              Direct an AI agent through a live production incident. The system
+              changes. Your score remembers how you respond.
+            </p>
+
+            <div class="hero-actions">
+              <button class="primary-button" type="button" data-action="open-briefing">
+                <span>Enter the mission</span>
+                <span class="button-key">↵</span>
+              </button>
+              <button class="text-button" type="button" data-action="scroll-how">
+                How it plays
+                <span aria-hidden="true">↓</span>
+              </button>
+            </div>
+
+            <p class="privacy-note">
+              No signup. Eight minutes. Nothing leaves your browser.
+            </p>
+          </div>
+
+          <aside class="mission-poster" aria-label="Current mission">
+            <div class="poster-grid" aria-hidden="true"></div>
+            <div class="poster-topline">
+              <span class="live-chip"><i></i> Live mission</span>
+              <span>#FG-001</span>
+            </div>
+
+            <div class="poster-visual" aria-hidden="true">
+              <div class="orbital-ring ring-one"></div>
+              <div class="orbital-ring ring-two"></div>
+              <div class="orbital-ring ring-three"></div>
+              <div class="incident-core">
+                <span>429</span>
+                <small>provider throttle</small>
+              </div>
+              <span class="orbit-label orbit-label-one">queue</span>
+              <span class="orbit-label orbit-label-two">ledger</span>
+              <span class="orbit-label orbit-label-three">cancel</span>
+            </div>
+
+            <div class="poster-copy">
+              <span class="poster-kicker">Black Friday</span>
+              <h2>Keep the money moving.</h2>
+              <p>
+                A payment service is duplicating charges as launch traffic ramps.
+                Stabilize it before the error budget disappears.
+              </p>
+            </div>
+
+            <dl class="mission-facts">
+              <div>
+                <dt>Timebox</dt>
+                <dd>08:00</dd>
+              </div>
+              <div>
+                <dt>Twists</dt>
+                <dd>01</dd>
+              </div>
+              <div>
+                <dt>Difficulty</dt>
+                <dd><span class="difficulty-pips" aria-label="Four out of five"><i></i><i></i><i></i><i></i><i class="off"></i></span></dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+
+        <section class="proof-strip" aria-label="Mission characteristics">
+          <div class="proof-item">
+            <span class="proof-number">01</span>
+            <div>
+              <strong>Direct the agent</strong>
+              <span>Good judgment beats prompt volume.</span>
+            </div>
+          </div>
+          <div class="proof-item">
+            <span class="proof-number">02</span>
+            <div>
+              <strong>Absorb the change</strong>
+              <span>The requirement moves after you commit.</span>
+            </div>
+          </div>
+          <div class="proof-item">
+            <span class="proof-number">03</span>
+            <div>
+              <strong>Prove the outcome</strong>
+              <span>Production behavior decides the score.</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="landing-lower" id="how-it-plays">
+          <div class="how-panel">
+            <div class="section-heading">
+              <span>How it plays</span>
+              <span class="section-rule"></span>
+            </div>
+            <h2>Not a quiz.<br />A system under pressure.</h2>
+            <p>
+              Inspect unfamiliar code, challenge a plausible agent answer, respond
+              when the business changes, and decide when the evidence is strong
+              enough to ship.
+            </p>
+            <button class="secondary-button" type="button" data-action="open-briefing">
+              Read the incident brief
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+
+          <div class="leaderboard-preview">
+            <div class="section-heading">
+              <span>Seeded season preview</span>
+              <span class="league-pill">Standard</span>
+            </div>
+            <div class="leaderboard-table" data-leaderboard-preview></div>
+            <div class="leaderboard-foot">
+              <span>Your best run stays local</span>
+              <span>Fixed tool budget</span>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="screen briefing-screen" data-screen="briefing" aria-labelledby="briefing-title">
+        <div class="briefing-shell">
+          <button class="back-button" type="button" data-action="back-home">
+            <span aria-hidden="true">←</span>
+            Back to arena
+          </button>
+
+          <div class="briefing-grid">
+            <div class="briefing-main">
+              <span class="briefing-kicker">Incident brief / FG-001</span>
+              <h1 id="briefing-title">Black Friday</h1>
+              <p class="briefing-lead">
+                Checkout is duplicating charges under load. Launch traffic reaches
+                ten times normal volume in eight minutes.
+              </p>
+
+              <div class="briefing-alert">
+                <span class="alert-icon" aria-hidden="true">!</span>
+                <div>
+                  <strong>The system will change mid-mission.</strong>
+                  <p>
+                    You will receive one live requirement. Ranked missions do not
+                    reveal its exact contents in advance.
+                  </p>
+                </div>
+              </div>
+
+              <div class="objectives">
+                <div class="section-heading">
+                  <span>Win conditions</span>
+                  <span class="section-rule"></span>
+                </div>
+                <ol>
+                  <li>
+                    <span>01</span>
+                    <div>
+                      <strong>Stop duplicate charges</strong>
+                      <p>Preserve exactly-once money-moving effects under redelivery.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <span>02</span>
+                    <div>
+                      <strong>Restore the service level</strong>
+                      <p>Bring p95 below 250 ms and errors below 1%.</p>
+                    </div>
+                  </li>
+                  <li>
+                    <span>03</span>
+                    <div>
+                      <strong>Ship with evidence</strong>
+                      <p>Validate the failure boundaries your implementation changes.</p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <aside class="loadout-card">
+              <div class="loadout-head">
+                <span>Your loadout</span>
+                <span>Standard league</span>
+              </div>
+
+              <label class="alias-field">
+                <span>Callsign</span>
+                <input
+                  type="text"
+                  name="alias"
+                  maxlength="18"
+                  autocomplete="nickname"
+                  spellcheck="false"
+                  value="guest"
+                  data-alias-input
+                />
+              </label>
+
+              <dl class="loadout-list">
+                <div>
+                  <dt>Agent</dt>
+                  <dd>Flux Agent 0.1</dd>
+                </div>
+                <div>
+                  <dt>Tool budget</dt>
+                  <dd>100 units</dd>
+                </div>
+                <div>
+                  <dt>Workspace</dt>
+                  <dd>TypeScript / Node</dd>
+                </div>
+                <div>
+                  <dt>Scoring</dt>
+                  <dd>Outcome + judgment</dd>
+                </div>
+              </dl>
+
+              <button class="primary-button wide" type="button" data-action="start-mission">
+                <span>Start incident</span>
+                <span class="button-key">↵</span>
+              </button>
+
+              <p class="prototype-note">
+                Interactive prototype. Agent execution is simulated locally and
+                deterministic for every player.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="screen mission-screen" data-screen="mission" aria-label="Black Friday mission">
+        <header class="mission-header">
+          <div class="mission-identity">
+            <span class="mission-code">FG-001</span>
+            <div>
+              <strong>Black Friday</strong>
+              <span>Production incident</span>
+            </div>
+          </div>
+
+          <div class="mission-progress-wrap">
+            <div class="mission-progress-label">
+              <span data-step-label>01 / Triage</span>
+              <span data-round-count>1 of 5 decisions</span>
+            </div>
+            <div class="mission-progress" role="progressbar" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0">
+              <span data-progress-bar></span>
+            </div>
+          </div>
+
+          <div class="mission-counters">
+            <div class="counter score-counter">
+              <span>Signal</span>
+              <strong><span data-live-score>0</span><small>/100</small></strong>
+            </div>
+            <div class="counter budget-counter">
+              <span>Budget</span>
+              <strong><span data-budget>100</span><small>%</small></strong>
+            </div>
+            <div class="counter timer-counter">
+              <span>Remaining</span>
+              <strong data-clock>08:00</strong>
+            </div>
+          </div>
+        </header>
+
+        <div class="mobile-panel-tabs" role="tablist" aria-label="Mission panels">
+          <button type="button" role="tab" aria-selected="true" data-mobile-panel="agent">Agent</button>
+          <button type="button" role="tab" aria-selected="false" data-mobile-panel="code">Code</button>
+          <button type="button" role="tab" aria-selected="false" data-mobile-panel="system">System</button>
+        </div>
+
+        <section class="decision-deck" aria-labelledby="decision-title">
+          <div class="decision-copy">
+            <span class="decision-kicker" data-round-step>01 / Triage</span>
+            <h2 id="decision-title" data-round-title>Start with signal</h2>
+            <p data-round-brief></p>
+          </div>
+          <div class="choice-grid" data-choice-grid></div>
+        </section>
+
+        <div class="mission-grid">
+          <section class="mission-panel workspace-panel" data-panel="code" aria-labelledby="workspace-title">
+            <div class="panel-head">
+              <div>
+                <span class="panel-eyebrow">Workspace</span>
+                <h2 id="workspace-title">payments-service</h2>
+              </div>
+              <span class="branch-chip">
+                <i aria-hidden="true"></i>
+                incident/fg-001
+              </span>
+            </div>
+
+            <div class="file-tabs" role="tablist" aria-label="Repository files" data-file-tabs></div>
+            <pre class="code-view" aria-live="polite"><code data-code-view></code></pre>
+            <div class="workspace-status">
+              <span><i class="status-dot status-red"></i><span data-test-status>14 passing · coverage gap</span></span>
+              <span>TypeScript</span>
+              <span>UTF-8</span>
+            </div>
+          </section>
+
+          <section class="mission-panel agent-panel is-mobile-active" data-panel="agent" aria-labelledby="agent-title">
+            <div class="panel-head">
+              <div>
+                <span class="panel-eyebrow">Agent channel</span>
+                <h2 id="agent-title">Flux Agent <small>simulated</small></h2>
+              </div>
+              <span class="agent-state"><i></i> Ready</span>
+            </div>
+
+            <div class="chat-stream" data-chat-stream aria-live="polite"></div>
+
+            <div class="prompt-box" aria-label="Current selected prompt">
+              <span class="prompt-glyph" aria-hidden="true">›</span>
+              <span data-prompt-preview>Choose an action above to direct the agent.</span>
+              <span class="prompt-key">⌘↵</span>
+            </div>
+          </section>
+
+          <aside class="mission-panel telemetry-panel" data-panel="system" aria-labelledby="telemetry-title">
+            <div class="panel-head">
+              <div>
+                <span class="panel-eyebrow">Live system</span>
+                <h2 id="telemetry-title">Production</h2>
+              </div>
+              <span class="live-state"><i></i> Traffic ramp</span>
+            </div>
+
+            <div class="metrics-grid">
+              <article class="metric-card" data-metric="throughput">
+                <span>Throughput</span>
+                <strong><span data-metric-value>3,100</span><small>/min</small></strong>
+                <div class="sparkline" aria-hidden="true">
+                  <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                </div>
+              </article>
+              <article class="metric-card is-bad" data-metric="p95">
+                <span>p95 latency</span>
+                <strong><span data-metric-value>640</span><small>ms</small></strong>
+                <div class="metric-threshold"><i></i> target &lt;250</div>
+              </article>
+              <article class="metric-card is-bad" data-metric="errors">
+                <span>Error rate</span>
+                <strong><span data-metric-value>8.2</span><small>%</small></strong>
+                <div class="metric-threshold"><i></i> target &lt;1</div>
+              </article>
+              <article class="metric-card is-critical" data-metric="duplicates">
+                <span>Duplicate charges</span>
+                <strong><span data-metric-value>4</span><small>live</small></strong>
+                <div class="metric-threshold"><i></i> target 0</div>
+              </article>
+            </div>
+
+            <div class="ops-feed">
+              <div class="ops-head">
+                <span>Ops feed</span>
+                <span>Newest first</span>
+              </div>
+              <div class="ops-events" data-ops-events aria-live="polite"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="screen results-screen" data-screen="results" aria-labelledby="results-title">
+        <div class="results-shell">
+          <header class="results-header">
+            <div>
+              <span class="results-kicker">Mission complete / verified simulation</span>
+              <h1 id="results-title">Incident contained.</h1>
+              <p data-results-summary>
+                Your decisions kept the payment system moving through a live requirement change.
+              </p>
+            </div>
+            <div class="result-seal">
+              <span>FG</span>
+              <small>001</small>
+            </div>
+          </header>
+
+          <div class="results-grid">
+            <section class="score-card">
+              <div class="score-orbit">
+                <svg viewBox="0 0 180 180" role="img" aria-label="Mission score">
+                  <circle class="score-track" cx="90" cy="90" r="73"></circle>
+                  <circle class="score-ring" cx="90" cy="90" r="73" data-score-ring></circle>
+                </svg>
+                <div class="score-number">
+                  <strong data-final-score>0</strong>
+                  <span>/ 100</span>
+                </div>
+              </div>
+
+              <div class="rank-callout">
+                <span>Placed</span>
+                <strong>#<span data-final-rank>—</span></strong>
+                <span>in the seeded field</span>
+              </div>
+
+              <div class="division-lockup">
+                <span class="division-badge" data-division-badge>G1</span>
+                <div>
+                  <span>Division</span>
+                  <strong data-final-division>Gold I</strong>
+                </div>
+              </div>
+            </section>
+
+            <section class="breakdown-card">
+              <div class="section-heading">
+                <span>Capability breakdown</span>
+                <span class="percentile-chip">Seeded top <span data-top-percent>—</span>%</span>
+              </div>
+              <div class="dimension-bars" data-dimension-bars></div>
+
+              <div class="mission-outcomes">
+                <article>
+                  <span class="outcome-icon">✓</span>
+                  <div>
+                    <strong data-outcome-duplicate>Duplicate charges stopped</strong>
+                    <span>Exactly-once effects</span>
+                  </div>
+                </article>
+                <article>
+                  <span class="outcome-icon">↯</span>
+                  <div>
+                    <strong data-outcome-latency>p95 restored</strong>
+                    <span>Production service level</span>
+                  </div>
+                </article>
+                <article>
+                  <span class="outcome-icon">⌁</span>
+                  <div>
+                    <strong data-outcome-adaptation>Requirement absorbed</strong>
+                    <span>One live change</span>
+                  </div>
+                </article>
+              </div>
+            </section>
+
+            <section class="replay-card">
+              <div class="section-heading">
+                <span>Decision replay</span>
+                <span data-replay-duration>08:00 window</span>
+              </div>
+              <div class="replay-timeline" data-replay-timeline></div>
+            </section>
+
+            <section class="final-leaderboard-card">
+              <div class="section-heading">
+                <span>Seeded field + you</span>
+                <span class="league-pill">Standard</span>
+              </div>
+              <div class="leaderboard-table" data-final-leaderboard></div>
+            </section>
+          </div>
+
+          <footer class="results-actions">
+            <button class="primary-button" type="button" data-action="rematch">
+              <span>Run it again</span>
+              <span aria-hidden="true">↻</span>
+            </button>
+            <button class="secondary-button" type="button" data-action="share-result">
+              Share result
+              <span aria-hidden="true">↗</span>
+            </button>
+            <button class="text-button" type="button" data-action="back-home">
+              Return to arena
+            </button>
+          </footer>
+        </div>
+      </section>
+    </main>
+
+    <div class="twist-overlay" data-twist-overlay aria-hidden="true">
+      <div class="twist-scan" aria-hidden="true"></div>
+      <div class="twist-card" role="alertdialog" aria-modal="true" aria-labelledby="twist-title">
+        <div class="twist-code">Live change / T+02:19</div>
+        <div class="twist-symbol" aria-hidden="true">↯</div>
+        <h2 id="twist-title">The requirement moved.</h2>
+        <p>
+          Provider throttling detected. Product now requires cancellations to
+          complete within 30 seconds—even while a charge is retrying.
+        </p>
+        <button class="primary-button wide" type="button" data-action="acknowledge-twist">
+          <span>Adapt the system</span>
+          <span class="button-key">↵</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+    <footer class="site-footer">
+      <span>Fluxgrade / public alpha</span>
+      <span>AI-native engineering missions</span>
+      <a href="https://jonathanpopham.com/ai-native-assessment/">Read the thesis ↗</a>
+    </footer>
+  </body>
+</html>
