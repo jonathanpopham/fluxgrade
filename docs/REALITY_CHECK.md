@@ -41,14 +41,14 @@ This distinction is intentional and must remain explicit in marketing and projec
 | Provenance-aware evidence chain | WORKING | `@fluxgrade/evidence-schema` build, 18 deterministic tests, portable fixture, and built-package append/verify smoke pass |
 | Versioned mission package contract | WORKING | `@fluxgrade/mission-schema` build, 15 deterministic tests, YAML fixtures, Ajv-validated JSON Schema, and built-package loader smoke pass |
 | Provider-neutral runtime contract | WORKING | `@fluxgrade/runtime-provider` build, 9 tests, full-profile conformance, and built-package lifecycle smoke pass; this is a contract and in-memory test fake, not a real runtime |
+| Checkout-latency candidate seed | WORKING WITH LIMITS | Deterministic broken checkout service, saved-method skew, stale wrong design note, 9 authoring tests covering naive and causal variants, byte-reproducible pinned archive, and clean extracted install/build/server smoke pass; no mission runtime or evaluator yet |
 | SaaS and private-deployment architecture | DESIGNED, UNIMPLEMENTED | `ARCHITECTURE.md` |
-| Executable implementation graph | IN PROGRESS | Foundation beads `fluxgrade-c90.1` through `.5` closed; 29 open Beads remain |
+| Executable implementation graph | IN PROGRESS | Beads `fluxgrade-c90.1` through `.6` closed; 28 open Beads remain |
 
 ## What does not exist yet
 
 | Vision goal | Status | Bead coverage |
 |---|---|---|
-| Real candidate repository mission | NOT_STARTED | `fluxgrade-c90.6` |
 | Normal local agent as primary interface | NOT_STARTED | `fluxgrade-c90.10` through `.14` |
 | Stateful running-system simulator | NOT_STARTED | `fluxgrade-c90.7` |
 | Separate hidden evaluator | NOT_STARTED | `fluxgrade-c90.8` |
@@ -77,7 +77,7 @@ This distinction is intentional and must remain explicit in marketing and projec
 1. **The core interaction loop is unproven.** No person has completed a real repository mission through their normal agent because that mission runtime does not exist.
 2. **The hosting backend is not selected.** Vendor isolation, networking, lifecycle, regions, private deployment, and real cost must be verified through the shared conformance bakeoff rather than assumed from marketing.
 3. **The assessment signal is unvalidated.** There is no evidence yet for variant equivalence, reviewer consistency, candidate discrimination, adverse impact, or employer usefulness.
-4. **The current repository architecture is still a static game plus foundational contracts.** The evidence, mission, and runtime-provider contracts now exist, but no durable API, workers, database, object storage, CLI, sidecar, gateway, evaluator, or real provider implementation exists.
+4. **The current repository architecture is still a static game plus foundational contracts and one candidate seed.** The candidate archive is real and independently runnable, but no durable API, workers, database, object storage, CLI, sidecar, gateway, evaluator, stateful mission runtime, or real provider implementation exists.
 5. **Private deployment is only an architectural boundary.** There is no Terraform, Helm, outbound runner, customer-cloud proof, upgrade path, or disconnected installation.
 
 ## Would completing every current bead close the gap?
