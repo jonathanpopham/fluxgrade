@@ -40,8 +40,9 @@ This distinction is intentional and must remain explicit in marketing and projec
 | Agent-first workspace foundation | WORKING | Clean-temp `pnpm install --frozen-lockfile` and `pnpm check` pass |
 | Provenance-aware evidence chain | WORKING | `@fluxgrade/evidence-schema` build, 18 deterministic tests, portable fixture, and built-package append/verify smoke pass |
 | Versioned mission package contract | WORKING | `@fluxgrade/mission-schema` build, 15 deterministic tests, YAML fixtures, Ajv-validated JSON Schema, and built-package loader smoke pass |
+| Provider-neutral runtime contract | WORKING | `@fluxgrade/runtime-provider` build, 9 tests, full-profile conformance, and built-package lifecycle smoke pass; this is a contract and in-memory test fake, not a real runtime |
 | SaaS and private-deployment architecture | DESIGNED, UNIMPLEMENTED | `ARCHITECTURE.md` |
-| Executable implementation graph | IN PROGRESS | Foundation beads `fluxgrade-c90.1` through `.4` closed except runtime contract `.5`; 30 open Beads remain |
+| Executable implementation graph | IN PROGRESS | Foundation beads `fluxgrade-c90.1` through `.5` closed; 29 open Beads remain |
 
 ## What does not exist yet
 
@@ -54,7 +55,7 @@ This distinction is intentional and must remain explicit in marketing and projec
 | Midstream requirement or incident updates | NOT_STARTED | `fluxgrade-c90.9`, `.11` |
 | Credential-brokered deploy boundary | NOT_STARTED | `fluxgrade-c90.13` |
 | Frozen clean submission | NOT_STARTED | `fluxgrade-c90.15` |
-| Provenance-aware evidence | NOT_STARTED | `fluxgrade-c90.4`, `.16` |
+| Provenance-aware result report | NOT_STARTED | `fluxgrade-c90.16` |
 | Deterministic serious-mission replay | NOT_STARTED | `fluxgrade-c90.17` |
 | Real-agent end-to-end playthrough | NOT_STARTED | `fluxgrade-c90.19` |
 | Managed remote runtime | NOT_STARTED | `fluxgrade-c90.20`, `.21` |
@@ -76,7 +77,7 @@ This distinction is intentional and must remain explicit in marketing and projec
 1. **The core interaction loop is unproven.** No person has completed a real repository mission through their normal agent because that mission runtime does not exist.
 2. **The hosting backend is not selected.** Vendor isolation, networking, lifecycle, regions, private deployment, and real cost must be verified through the shared conformance bakeoff rather than assumed from marketing.
 3. **The assessment signal is unvalidated.** There is no evidence yet for variant equivalence, reviewer consistency, candidate discrimination, adverse impact, or employer usefulness.
-4. **The current repository architecture is a static game.** None of the durable API, workers, database, object storage, CLI, sidecar, gateway, evaluator, or provider boundaries have been implemented.
+4. **The current repository architecture is still a static game plus foundational contracts.** The evidence, mission, and runtime-provider contracts now exist, but no durable API, workers, database, object storage, CLI, sidecar, gateway, evaluator, or real provider implementation exists.
 5. **Private deployment is only an architectural boundary.** There is no Terraform, Helm, outbound runner, customer-cloud proof, upgrade path, or disconnected installation.
 
 ## Would completing every current bead close the gap?
