@@ -4,9 +4,9 @@ Date: 2026-08-01
 
 ## Verdict
 
-Fluxgrade is not yet the agent-first SaaS described in `docs/ARCHITECTURE.md`. It is a polished, deployed, deterministic browser trailer plus a newly recovered product thesis, architecture, implementation plan, and Beads graph.
+Fluxgrade is not yet the agent-first SaaS described in `docs/ARCHITECTURE.md`. It is a polished, deployed, deterministic browser trailer plus a verified pnpm/TypeScript/Vitest workspace foundation, recovered product thesis, architecture, implementation plan, and active Beads graph.
 
-The current implementation does deliver its existing README promise: it is a playable static MVP used to test whether a reactive mission is understandable and fun. It does not yet deliver the larger original promise of real repositories, normal coding agents, isolated running systems, dynamic requirements, private assessments, signed evidence, rankings, or private deployment.
+The current implementation delivers its existing README promise and preserves that trailer behind dedicated regression gates. It now also supports clean frozen pnpm installs and empty monorepo commands, but it does not yet deliver real repositories, normal coding agents, isolated running systems, dynamic requirements, private assessments, signed evidence, rankings, or private deployment.
 
 This distinction is intentional and must remain explicit in marketing and project status.
 
@@ -37,8 +37,9 @@ This distinction is intentional and must remain explicit in marketing and projec
 | Seeded local leaderboard | WORKING WITH LIMITS | Browser-local, deliberately not authoritative |
 | Public positioning and visual identity | WORKING | Live GitHub Pages artifact |
 | Recovered original product intent | WORKING | Primary-source synthesis in `PRODUCT_ORIGINS.md` |
+| Agent-first workspace foundation | WORKING | Clean-temp `pnpm install --frozen-lockfile` and `pnpm check` pass |
 | SaaS and private-deployment architecture | DESIGNED, UNIMPLEMENTED | `ARCHITECTURE.md` |
-| Executable implementation graph | PLANNED, UNIMPLEMENTED | 35 open Beads including the epic and this publication task |
+| Executable implementation graph | IN PROGRESS | Foundation beads `fluxgrade-c90.1` and `.2` closed; 32 open Beads remain |
 
 ## What does not exist yet
 

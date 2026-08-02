@@ -19,8 +19,8 @@ that engineers want to replay it and compete?
 ## Run locally
 
 ```bash
-npm install
-npm run serve
+pnpm install --frozen-lockfile
+pnpm serve
 ```
 
 Open <http://127.0.0.1:4173>.
@@ -28,8 +28,7 @@ Open <http://127.0.0.1:4173>.
 ## Verify
 
 ```bash
-npm test
-npm run test:e2e
+pnpm check
 ```
 
 The production site is published with GitHub Pages at

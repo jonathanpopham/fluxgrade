@@ -4,13 +4,26 @@
   "private": true,
   "type": "module",
   "description": "A competitive, AI-native software engineering mission prototype.",
+  "packageManager": "pnpm@10.33.2",
+  "engines": {
+    "node": "24.3.0",
+    "pnpm": "10.33.2"
+  },
   "scripts": {
+    "build": "pnpm --recursive --filter './apps/**' --filter './packages/**' --filter './providers/**' --filter './trials/**' --if-present run build",
+    "check": "pnpm build && pnpm test:unit && pnpm test:integration && pnpm test:conformance && pnpm test:e2e && pnpm test:trailer",
     "serve": "node scripts/server.mjs",
-    "test": "node --test",
+    "test": "node --test tests/game-engine.test.js",
+    "test:unit": "pnpm test && vitest --run --passWithNoTests",
+    "test:integration": "pnpm --recursive --filter './apps/**' --filter './packages/**' --filter './providers/**' --filter './trials/**' --if-present run test:integration",
+    "test:conformance": "pnpm --recursive --filter './apps/**' --filter './packages/**' --filter './providers/**' --filter './trials/**' --if-present run test:conformance",
     "test:e2e": "node tests/e2e.mjs",
     "test:trailer": "node tests/trailer-regression.mjs"
   },
   "devDependencies": {
-    "playwright-core": "^1.54.1"
+    "@types/node": "24.3.3",
+    "playwright-core": "^1.54.1",
+    "typescript": "7.0.2",
+    "vitest": "4.1.10"
   }
 }
