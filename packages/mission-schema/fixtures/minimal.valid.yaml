@@ -1,0 +1,45 @@
+schemaVersion: "1.0.0"
+id: checkout-latency
+version: "1.0.0"
+title: Checkout latency incident
+candidate:
+  artifact: candidate/repository.tar.zst
+  digest: sha256:1111111111111111111111111111111111111111111111111111111111111111
+runtime:
+  entrypoint: runtime/compose.yaml
+  images:
+    - id: checkout-api
+      image: ghcr.io/fluxgrade/checkout-api@sha256:2222222222222222222222222222222222222222222222222222222222222222
+  seededVariant: baseline
+  capabilities:
+    - docker-compose
+evaluator:
+  image: ghcr.io/fluxgrade/checkout-evaluator@sha256:3333333333333333333333333333333333333333333333333333333333333333
+  checks: evaluator/checks.yaml
+  rubric: evaluator/rubric.yaml
+policies:
+  source: policies/public-open.yaml
+  retentionClass: public-practice
+  scoringModelVersion: "1.0.0"
+events:
+  - id: provider-degradation
+    definition: events/provider-degradation.yaml
+    dependsOn: []
+objectives:
+  - id: restore-latency
+    description: Restore production p95 latency without sacrificing correctness.
+    visibility: public
+    weight: 60
+  - id: preserve-exactly-once
+    description: Preserve exactly-once charge semantics under provider degradation.
+    visibility: hidden
+    weight: 40
+limits:
+  durationSeconds: 1800
+  cpuMillicores: 2000
+  memoryMiB: 2048
+  diskMiB: 4096
+  network:
+    outbound: allowlist
+    allowedHosts:
+      - registry.npmjs.org

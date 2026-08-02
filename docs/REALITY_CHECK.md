@@ -39,8 +39,9 @@ This distinction is intentional and must remain explicit in marketing and projec
 | Recovered original product intent | WORKING | Primary-source synthesis in `PRODUCT_ORIGINS.md` |
 | Agent-first workspace foundation | WORKING | Clean-temp `pnpm install --frozen-lockfile` and `pnpm check` pass |
 | Provenance-aware evidence chain | WORKING | `@fluxgrade/evidence-schema` build, 18 deterministic tests, portable fixture, and built-package append/verify smoke pass |
+| Versioned mission package contract | WORKING | `@fluxgrade/mission-schema` build, 15 deterministic tests, YAML fixtures, Ajv-validated JSON Schema, and built-package loader smoke pass |
 | SaaS and private-deployment architecture | DESIGNED, UNIMPLEMENTED | `ARCHITECTURE.md` |
-| Executable implementation graph | IN PROGRESS | Foundation beads `fluxgrade-c90.1`, `.2`, and `.4` closed; 31 open Beads remain |
+| Executable implementation graph | IN PROGRESS | Foundation beads `fluxgrade-c90.1` through `.4` closed except runtime contract `.5`; 30 open Beads remain |
 
 ## What does not exist yet
 
