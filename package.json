@@ -7,7 +7,8 @@
   "scripts": {
     "serve": "node scripts/server.mjs",
     "test": "node --test",
-    "test:e2e": "node tests/e2e.mjs"
+    "test:e2e": "node tests/e2e.mjs",
+    "test:trailer": "node tests/trailer-regression.mjs"
   },
   "devDependencies": {
     "playwright-core": "^1.54.1"
