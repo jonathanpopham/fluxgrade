@@ -11,7 +11,7 @@
 
 ## Product truth
 
-- Read `README.md`, `docs/PRODUCT_ORIGINS.md`, `docs/ARCHITECTURE.md`, and `docs/REALITY_CHECK.md` before planning substantial work.
+- Read `GOAL.md`, `README.md`, `docs/PRODUCT_ORIGINS.md`, `docs/ARCHITECTURE.md`, and `docs/REALITY_CHECK.md` before planning substantial work.
 - The current browser game is the trailer. The serious product is an agent-first repository mission platform.
 - Candidate repositories and running-system outcomes are authoritative. Agent claims are not proof.
 - Never commit session credentials. Render secret values as `[REDACTED]` in evidence and documentation.
