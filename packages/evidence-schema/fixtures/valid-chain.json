@@ -1,0 +1,40 @@
+[
+  {
+    "sessionId": "ses_fixture_001",
+    "source": "runtime",
+    "sourceInstance": "runtime-fixture-1",
+    "kind": "session.started",
+    "occurredAt": "2026-08-01T00:00:00.000Z",
+    "receivedAt": "2026-08-01T00:00:00.010Z",
+    "payload": {
+      "missionId": "checkout-latency",
+      "version": "1.0.0"
+    },
+    "visibility": "candidate",
+    "retentionClass": "public-practice",
+    "schemaVersion": "1.0.0",
+    "sequence": 1,
+    "payloadDigest": "5a942d950ec09dcc9b38130aed669ad124b7428df936a44422d260586175f6fd",
+    "previousEventDigest": null,
+    "eventDigest": "fc41a57b1bf87efdbe685dec23e4241ee78722120b624c5bbbd8be31ab61208f"
+  },
+  {
+    "sessionId": "ses_fixture_001",
+    "source": "evaluator",
+    "sourceInstance": "evaluator-fixture-1",
+    "kind": "evaluation.completed",
+    "occurredAt": "2026-08-01T00:01:00.000Z",
+    "receivedAt": "2026-08-01T00:01:00.020Z",
+    "payload": {
+      "passed": true,
+      "score": 100
+    },
+    "visibility": "reviewer",
+    "retentionClass": "public-practice",
+    "schemaVersion": "1.0.0",
+    "sequence": 2,
+    "payloadDigest": "42c27c6270bc057310f2cc497460fd149b3e9dce6642121d60a7c3755b45ac4c",
+    "previousEventDigest": "fc41a57b1bf87efdbe685dec23e4241ee78722120b624c5bbbd8be31ab61208f",
+    "eventDigest": "1bf093a2cd753faff2c4dbb676e772d4ca2f69e691f2045688490a465599b9e0"
+  }
+]
